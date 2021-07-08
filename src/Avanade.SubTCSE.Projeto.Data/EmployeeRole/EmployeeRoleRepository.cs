@@ -1,12 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Avanade.SubTCSE.Projeto.Domain.Aggregates.EmployeeRole.Interfaces.Repository;
+using Avanade.SubTCSE.Projeto.Data.Base;
 
 namespace Avanade.SubTCSE.Projeto.Data.EmployeeRole
 {
-    class EmployeeRoleRepository
+    public class EmployeeRoleRepository 
+        : BaseRepository<Domain.Aggregates.EmployeeRole.Entities.EmployeeRole, string>
+        , IEmployeeRoleRepository
     {
     }
 }
